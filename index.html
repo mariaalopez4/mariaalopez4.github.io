@@ -55,7 +55,52 @@
       <section id="projects" class="projects-section">
         <h2 class="section-title">Featured Projects</h2>
 
-        <!-- Project 1: web-audit-cli (Live & Active) -->
+        <!-- Project 1: ids-multiagente-iot-rag (Master's Thesis / Star Project) -->
+        <article class="project-item">
+          <div class="project-top">
+            <h3 class="project-name">
+              <a href="https://github.com/mariaalopez4/ids-multiagente-iot-rag" target="_blank" rel="noopener noreferrer">
+                ids-multiagente-iot-rag <span class="arrow">↗</span>
+              </a>
+            </h3>
+            <span class="project-tag active">Master's Thesis · UC3M</span>
+          </div>
+
+          <p class="project-desc">
+            Hybrid multi-agent Intrusion Detection System (IDS) for IoT networks with active high availability. Combines ultra-fast <strong>XGBoost</strong> anomaly detection (sub-5 ms latency, 96.68% weighted F1-score) with zero-shot <strong>LLM schema healing (Llama 3.3 70B)</strong> for cold start network telemetry, and an evidence-grounded <strong>RAG pipeline over MITRE CAPEC</strong> via FAISS to generate hallucination-free mitigation playbooks.
+          </p>
+
+          <div class="project-meta">
+            <span class="meta-tag">Python</span>
+            <span class="meta-tag">Streamlit SOC</span>
+            <span class="meta-tag">XGBoost</span>
+            <span class="meta-tag">Llama 3.3</span>
+            <span class="meta-tag">FAISS RAG</span>
+            <span class="meta-tag">MITRE ATT&amp;CK &amp; CAPEC</span>
+          </div>
+
+          <!-- Clean Terminal / Demo Box -->
+          <div class="cli-box">
+            <div class="cli-header">
+              <span class="cli-dot"></span>
+              <span class="cli-dot"></span>
+              <span class="cli-dot"></span>
+              <span class="cli-title">streamlit — multi-agent-ids</span>
+            </div>
+            <pre class="cli-body"><code><span class="cli-cmd">$ streamlit run src/app.py</span>
+[+] Initializing Multi-Agent IDS Orchestrator...
+[+] Sentinel Engine: XGBoost Tier-1 (&lt;4.2ms inference | F1: 96.68%)
+[+] Normalizer Engine: Zero-Shot Schema Healing (Llama 3.3 70B)
+[+] Responder Engine: Grounded RAG with FAISS (MITRE CAPEC Index)
+--------------------------------------------------
+Status:       Active High Availability (Zero Downtime)
+Cold Start:   94.25% zero-shot accuracy on unseen schemas
+Hot-Swap:     Transparent background retraining (&lt;150s)
+Dashboard:    http://localhost:8501</code></pre>
+          </div>
+        </article>
+
+        <!-- Project 2: web-audit-cli (Live & Active) -->
         <article class="project-item">
           <div class="project-top">
             <h3 class="project-name">
@@ -106,6 +151,9 @@ Markdown:     reports/example.com/report.md</code></pre>
         <h2 class="section-title">Tech &amp; Tools</h2>
         <div class="tech-cloud">
           <span class="tech-pill">Python</span>
+          <span class="tech-pill">XGBoost</span>
+          <span class="tech-pill">LLMs &amp; RAG</span>
+          <span class="tech-pill">Machine Learning</span>
           <span class="tech-pill">C#</span>
           <span class="tech-pill">Java</span>
           <span class="tech-pill">Neo4j</span>
@@ -136,5 +184,3 @@ Markdown:     reports/example.com/report.md</code></pre>
   </div>
 
   <script src="main.js"></script>
-</body>
-</html>
